@@ -1,5 +1,7 @@
 /// <reference types="aurelia-loader-webpack/src/webpack-hot-interface"/>
 // we want font-awesome to load as soon as possible to show the fa-spinner
+import 'bootstrap/dist/css/bootstrap.css';
+import 'font-awesome/css/font-awesome.css';
 import {Aurelia} from 'aurelia-framework'
 import environment from './environment';
 import {PLATFORM} from 'aurelia-pal';
@@ -28,3 +30,4 @@ export function configure(aurelia: Aurelia) {
 
   return aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app')));
 }
+
